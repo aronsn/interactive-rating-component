@@ -4,49 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/icon-star.svg">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <title> Interactive rating component</title>
 </head>
 
 <body>
-  <div class="rating-container">
-    <img src="" alt="icon-star">
+  <div class="card">
+    <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+        fill="#FC7614" />
+    </svg>
     <h1>How did we do?</h1>
     <p>
       Please let us know how we did with your support request.
       All feedback is appreciated to help us improve our offering!
     </p>
-    <section class="rating-selection">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-    </section>
-    <button>Submit</button>
-  </div>
+    <form class="selection" action="./pages/feedback.html" method="GET">
+      <div class="checkbox-container">
+        <input name="rating" type="checkbox" value="1">
+        <span class="checkbox">1</span>
+      </div>
 
-  <div class="thank-you-container">
-    <img src="" alt="illustration-thank-you">
-    <p>You selected&nbsp;<span></span>&nbsp;out of 5</p>
-    <h2>Thank you!</h2>
-    <p>
-      We appreciate you taking the time to give a rating. If you ever need more support,
-      don’t hesitate to get in touch!
-    </p>
+      <div class="checkbox-container">
+        <input name="rating" type="checkbox" value="2">
+        <span class="checkbox">2</span>
+      </div>
+
+      <div class="checkbox-container">
+        <input name="rating" type="checkbox" value="3">
+        <span class="checkbox">3</span>
+      </div>
+
+      <div class="checkbox-container">
+        <input name="rating" type="checkbox" value="4">
+        <span class="checkbox">4</span>
+      </div>
+
+      <div class="checkbox-container">
+        <input name="rating" type="checkbox" value="5">
+        <span class="checkbox">5</span>
+      </div>
+
+      <input type="submit" value="Submit" />
+    </form>
   </div>
 </body>
 
