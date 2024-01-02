@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Overpass';
+    src: url('fonts/static/Overpass-Regular.ttf') format('truetype'),
+        url('fonts/static/Overpass-Bold.ttf') format('truetype');
+}
+
+:root {
+    /* Primary colors */
+    --orange: 25, 97%, 53%;
+    --orange-hsl: hsl(25, 97%, 53%);
+
+    /* Neutral colors */
+    --white: 0, 0%, 100%;
+    --white-hsl: hsl(0, 0%, 100%);
+
+    --light-grey: 217, 12%, 63%;
+    --light-grey-hsl: hsl(217, 12%, 63%);
+
+    --medium-grey: 216, 12%, 54%;
+    --medium-grey-hsl: hsl(216, 12%, 54%);
+
+    --dark-blue: 213, 19%, 18%;
+    --dark-blue-hsl: hsl(213, 19%, 18%);
+
+    --very-dark-blue: 216, 12%, 8%;
+    --very-dark-blue-hsl: hsl(216, 12%, 8%);
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--very-dark-blue-hsl);
+    color: var(--white-hsl)
+}
+
+body p {
+    font-size: 15px;
+}
+
+@media (min-width: 375px) {
+    body {
+        background-color: rebeccapurple;
+    }
+}
