@@ -49,6 +49,7 @@ p {
     color: var(--medium-grey-hsl);
     margin-top: 0;
     margin-bottom: 32px;
+    line-height: 1.7;
 }
 
 .flexbox-wrap {
@@ -156,8 +157,6 @@ section h2 {
 
 section p {
     text-align: center;
-    font-weight: 700;
-    line-height: 1.7;
     margin-bottom: 8px;
 }
 
@@ -167,6 +166,12 @@ section p {
     }
 
     .card {
-        width: 330px;
+        width: 340px;
+        padding: 40px;
+        border-radius: 32px;
+    }
+
+    .phone-icon {
+        margin-bottom: 32px;
     }
 }
