@@ -150,12 +150,12 @@ p {
     width: fit-content;
 }
 
-section h2,
-p {
+section h2 {
     text-align: center;
 }
 
 section p {
+    text-align: center;
     font-weight: 700;
     line-height: 1.7;
     margin-bottom: 8px;
