@@ -24,20 +24,121 @@
 
     --very-dark-blue: 216, 12%, 8%;
     --very-dark-blue-hsl: hsl(216, 12%, 8%);
+
 }
 
 body {
     font-family: 'Overpass', sans-serif;
     background-color: var(--very-dark-blue-hsl);
-    color: var(--white-hsl)
+    color: var(--white-hsl);
+
+    /* center card */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
 }
 
-body p {
+h1 {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+p {
     font-size: 15px;
+    color: var(--medium-grey-hsl);
+    margin-top: 0;
+    margin-bottom: 32px;
 }
 
-@media (min-width: 375px) {
-    body {
-        background-color: rebeccapurple;
+.flexbox-wrap {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    background: hsla(var(--medium-grey), 0.1);
+}
+
+.card {
+    background: radial-gradient(circle 20vh at top center, hsla(var(--dark-blue), 1) 20px, hsla(var(--dark-blue), 0.5));
+    width: fit-content;
+    padding: 32px 24px;
+    border-radius: 15px;
+}
+
+/* Radio buttons style */
+.radio-button input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.radio-button label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    background: hsla(var(--medium-grey), 0.1);
+    color: hsl(var(--light-grey));
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.radio-button label:hover {
+    background: hsl(var(--light-grey));
+    color: white;
+    transition: ease 0.2s;
+}
+
+.radio-button input:checked~label {
+    background: hsl(var(--orange));
+    color: white;
+    transition: ease 0.2s;
+}
+
+
+.button {
+    /* Container */
+    width: 100%;
+    padding: 16px;
+    background-color: var(--orange-hsl);
+    border: none;
+    border-radius: 40px;
+
+    /* Typography */
+    color: var(--white-hsl);
+    font-family: 'Overpass';
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.button:hover {
+    transition: ease 0.2s;
+    cursor: pointer;
+    background-color: var(--white-hsl);
+    color: var(--orange-hsl);
+
+}
+
+@media (min-width: 376px) {
+    .button {
+        padding: 12px 16px;
+    }
+
+    .card {
+        width: 330px;
     }
 }
