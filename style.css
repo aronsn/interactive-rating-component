@@ -32,11 +32,11 @@ body {
     background-color: var(--very-dark-blue-hsl);
     color: var(--white-hsl);
 
-    /* center card */
+    /* center items */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 h1 {
