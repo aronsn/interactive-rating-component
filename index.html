@@ -10,7 +10,7 @@
 </head>
 
 <body onload="addClickEventsToButtons()">
-  <div class="card">
+  <main class="card">
     <div class="star-icon">
       <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -26,34 +26,34 @@
     <form class="rating-form" action="./feedback.html" method="GET">
       <div class="flexbox-wrap">
         <div class="radio-button">
-          <input name="answer" type="radio" value="1">
-          <label>1</label>
+          <input id="value_1" name="answer" type="radio" value="1">
+          <label for="value_1">1</label>
         </div>
 
         <div class="radio-button">
-          <input name="answer" type="radio" value="2">
-          <label>2</label>
+          <input id="value_2" name="answer" type="radio" value="2">
+          <label for="value_2">2</label>
         </div>
 
         <div class="radio-button">
-          <input name="answer" type="radio" value="3">
-          <label>3</label>
+          <input id="value_3" name="answer" type="radio" value="3">
+          <label for="value_3">3</label>
         </div>
 
         <div class="radio-button">
-          <input name="answer" type="radio" value="4">
-          <label>4</label>
+          <input id="value_4" name="answer" type="radio" value="4">
+          <label for="value_4">4</label>
         </div>
 
         <div class="radio-button">
-          <input name="answer" type="radio" value="5">
-          <label>5</label>
+          <input id="value_5" name="answer" type="radio" value="5">
+          <label for="value_5">5</label>
         </div>
       </div>
 
       <input class="button" type="submit" value="SUBMIT" />
     </form>
-  </div>
+  </main>
 </body>
 
 <script src="script.js"></script>
