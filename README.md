@@ -24,9 +24,17 @@ Users should be able to:
 - See the "Thank you" card state after submitting a rating
 
 ### Screenshot
+
+#### Form
 ![desktop](https://github.com/aronsn/interactive-rating-component-main/assets/54532695/6643500c-a05a-4d4d-abe8-ef9068dc41a1)
 
 ![mobile](https://github.com/aronsn/interactive-rating-component-main/assets/54532695/9668126b-7ef3-4fc2-8041-0c8c49b3508d)
+
+#### Thank you
+
+![mobile](https://github.com/aronsn/interactive-rating-component-main/assets/54532695/8598e57b-3a8e-4b19-9418-649ac27e4a9d)
+
+![desktop](https://github.com/aronsn/interactive-rating-component-main/assets/54532695/fd647437-2d27-4f4e-9e83-eb7daa82b838)
 
 
 ### Links
