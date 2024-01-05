@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://aronsn.github.io/interactive-rating-component-main/)
+- Solution URL: [Solution URL here](https://aronsn.github.io/interactive-rating-component/)
 
 ## My process
 
